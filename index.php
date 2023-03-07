@@ -35,17 +35,17 @@ $shop = new Store('Arcaplanet');
         <section class=" d-flex justify-content-center flex-wrap">
             <?php
             foreach ($productList as $product) {
-                $prod = new Product($product);
+                $prod = new Product($shop, $product);
                 $prod->selectType($product);
             ?>
                 <div class="card m-2 rounded-4">
                     <div class="img-card">
-
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Royal-Canin-Logo.svg/2560px-Royal-Canin-Logo.svg.png" alt="">
                     </div>
                     <div class="info-card">
                         <p>Name: <?php echo $prod->name  ?></p>
                         <p>Price: <?php echo $prod->price  ?></p>
-                        <p>tipology:<?php echo $prod->tipology  ?></p>
+                        <p>tipology: <?php echo $prod->tipology  ?></p>
                         <p>category: <?php echo $prod->category  ?></p>
                         <p> <?php echo $prod->calories  ?></p>
                         <p> <?php echo $prod->size  ?></p>

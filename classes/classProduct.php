@@ -31,12 +31,13 @@ class Product extends Store {
 
 
 
-public function __construct($_productList){
+public function __construct($_nameStore, $_productList){
 
     $this->name = $_productList['nome'];
     $this->price = $_productList['prezzo'];
     $this->tipology = $_productList['tipologia'];
     $this->category = $_productList['categoria'];
+    $this->nameStore = $_nameStore;
 } 
 
 }
