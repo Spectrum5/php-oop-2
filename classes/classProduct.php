@@ -2,9 +2,11 @@
 
 
 class Product extends Store {
+    
 
     public $name;
     public $price;
+    public $logo;
     public $tipology;
     public $category;
     public $calories;
@@ -37,6 +39,7 @@ public function __construct($_nameStore, $_productList){
     $this->price = $_productList['prezzo'];
     $this->tipology = $_productList['tipologia'];
     $this->category = $_productList['categoria'];
+    $this->logo = $_productList['logo'];
     $this->nameStore = $_nameStore;
 } 
 
