@@ -40,7 +40,7 @@ $shop = new Store('Arcaplanet');
             ?>
                 <div class="card m-2 rounded-4">
                     <div class="img-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Royal-Canin-Logo.svg/2560px-Royal-Canin-Logo.svg.png" alt="">
+                        <img src="<?php echo $prod-> logo ?>" alt="">
                     </div>
                     <div class="info-card">
                         <p>Name: <?php echo $prod->name  ?></p>
