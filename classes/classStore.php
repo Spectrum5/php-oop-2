@@ -1,6 +1,6 @@
 <?php
 
-class Store{
+class Store {
 public $nameStore;
 
 public function __construct($_name){
